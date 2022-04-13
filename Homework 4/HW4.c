@@ -179,6 +179,9 @@ int checkSuperCharger(Dragracer *pdr, int drcount)
     return count;
 } // end checkSuperCharger
 
+
+// This function satisfies Extra Credit a,b, and c.
+// Funtion to check for the smallest and largest engines, as well as print a report.
 void getLeaderboardReport(Dragracer *pdr, int drcount)
 {
     int smallest = 0;
@@ -206,4 +209,4 @@ void getLeaderboardReport(Dragracer *pdr, int drcount)
     printf("\t\tbiggest is: %d\n", (pdr + biggest)->horsepower);
     printf("----------------------------\n");
     printf("The total superchargers selected to be installed: %d\n", checkSuperCharger(pdr, drcount));
-} // end checkSuperCharger
+} // end getLeaderboardReport
